@@ -99,7 +99,7 @@
      world.matrixWorldNeedsUpdate = true;
   //   console.log(world);
 
-     var worldCloudsGeometry = new THREE.SphereGeometry(1.02 * worldRadius, 32, 32);
+    /* var worldCloudsGeometry = new THREE.SphereGeometry(1.02 * worldRadius, 32, 32);
      worldClouds = new THREE.Mesh(
          worldCloudsGeometry,
          new THREE.MeshPhongMaterial({
@@ -108,7 +108,7 @@
          })
      );
      worldClouds.position.z = z0;
-     //scene.add(worldClouds);
+     scene.add(worldClouds);*/
      // background Plane
      var planeTexture = new THREE.ImageUtils.loadTexture('resource/world_galaxy_starfield.png');
      planeTexture.wrapS = planeTexture.wrapT = THREE.RepeatWrapping;
