@@ -58,8 +58,8 @@
 
  function animate() {
      requestAnimationFrame(animate);
-     var time = Date.now() * 0.001;
-     mesh1.rotation.set(-Math.PI / 2 + 0.2 * Math.sin(3.2 * time), 0 * Math.PI / 2, -Math.PI / 2 + 0.25 * Math.sin(4 * time));
+   
+     mesh1.rotation.set(-Math.PI / 2 + 0.2 * Math.sin(3.2 * LEIA.time), 0 * Math.PI / 2, -Math.PI / 2 + 0.25 * Math.sin(4 * LEIA.time));
      mesh1.position.z = -2;
      renderer.setClearColor(new THREE.Color().setRGB(1.0, 1.0, 1.0));
      renderer.Leia_render({
@@ -97,7 +97,7 @@
      world.matrixWorld.elements[10] = 0.1;
      console.log(world.matrixWorld.elements[10]);
      world.matrixWorldNeedsUpdate = true;
-     console.log(world);
+  //   console.log(world);
 
      var worldCloudsGeometry = new THREE.SphereGeometry(1.02 * worldRadius, 32, 32);
      worldClouds = new THREE.Mesh(
@@ -109,9 +109,6 @@
      );
      worldClouds.position.z = z0;
      //scene.add(worldClouds);
-
-
-
      // background Plane
      var planeTexture = new THREE.ImageUtils.loadTexture('resource/world_galaxy_starfield.png');
      planeTexture.wrapS = planeTexture.wrapT = THREE.RepeatWrapping;
