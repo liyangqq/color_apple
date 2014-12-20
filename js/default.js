@@ -10,7 +10,6 @@
  var sizeMesh1 = sizeM,
      sizeMesh2 = sizeM,
      sizeMesh3 = sizeM;
- //var depthCompress = 0.5;
  var depthCompress = 0.3;
  var z0 = -5;
  var worldRadius = 15;
